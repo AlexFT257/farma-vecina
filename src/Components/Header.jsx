@@ -5,27 +5,26 @@ const font = Baloo_Bhaijaan_2({ subsets: ['latin'] })
 
 
 export default function Header() {
-
     const facebookURL = "https://www.facebook.com/farmavecina?locale=es_LA"
     const instaURL = "https://www.instagram.com/farma_vecina/?fbclid=IwY2xjawESF65leHRuA2FlbQIxMQABHTcFE238joeIOhbmGJQvZG_7CBTebDhr5KXxStfhhwMlbNPwcGnegsuwkg_aem_b6YQOYFAVbvRLiSEArHyBQ"
 
     return (
-        <header className={`${font.className} flex w-full p-5 z-10 fixed top-0 `}>
+        <header className={`${font.className} bg-white rounded-md flex w-full justify-evenly  p-5 z-50 fixed top-0 `}>
             {/* Logo */}
-            <div className="flex flex-row w-1/3 items-center fill-[#ff7d00] bg-gradient-to-r from-[#ff7d00] to-[#fb3640] bg-clip-text text-transparent">
+            <div className="flex flex-row w-1/3 items-center bg-clip-text  fill-[#ff7d00] bg-gradient-to-r from-[#ff7d00] to-[#fb3640] text-transparent">
                 <svg className="hidden sm:block rotate-90" xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px">
                     <path d="M345-120q-94 0-159.5-65.5T120-345q0-45 17-86t49-73l270-270q32-32 73-49t86-17q94 0 159.5 65.5T840-615q0 45-17 86t-49 73L504-186q-32 32-73 49t-86 17Zm273-265 114-113q23-23 35.5-53.5T780-615q0-69-48-117t-117-48q-33 0-63.5 12.5T498-732L385-618l233 233ZM345-180q32 0 63-12.5t54-35.5l113-114-233-233-114 113q-23 23-35.5 53.5T180-345q0 69 48 117t117 48Z" />
                 </svg>
                 <h1 className="text-3xl lg:text-4xl   font-extrabold tracking-tight ">Farma Vecina</h1>
             </div>
             {/* opciones */}
-            <div className="flex flex-row w-1/3  justify-evenly text-xl font-bold items-center ">
-                <a className="text-[#605f5e] hover:text-[#2b2c28] active:text-[#001524]" href="/">Inicio</a>
-                <a className="text-[#605f5e] hover:text-[#2b2c28] active:text-[#001524]" href="/Articulos">Articulos</a>
-                <a className="text-[#605f5e] hover:text-[#2b2c28] active:text-[#001524]" href="/Contacto">Contacto</a>
+            <div className="flex flex-row md:w-1/3 w-full   justify-evenly text-sm md:text-xl font-bold items-center ">
+                <a className="text-[#011627] hover:border-b-4 hover:border-[#fb3640] active:text-[#001524] transition-all ease-in-out duration-100" href="/">Inicio</a>
+                <a className="text-[#011627] hover:border-b-4 hover:border-[#fb3640] active:text-[#001524] transition-all ease-in-out duration-100" href="/Articulos">Articulos</a>
+                <a className="text-[#011627] hover:border-b-4 hover:border-[#fb3640] active:text-[#001524] transition-all ease-in-out duration-100" href="/Contacto">Contacto</a>
             </div>
             {/* socials */}
-            <div className="flex flex-row w-1/3 justify-end items-center ">
+            <div className="hidden sm:flex flex-row w-1/3  justify-end items-center ">
                 {/* facebook */}
                 <a target="_blank" href={facebookURL}>
                     <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 50 50">
